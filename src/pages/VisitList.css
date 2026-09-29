@@ -50,6 +50,19 @@
   background: #f8fafc;
 }
 
+@media (max-width: 640px) {
+  .visit-table th,
+  .visit-table td {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .visit-table th:nth-child(5),
+  .visit-table td:nth-child(5) {
+    display: none;
+  }
+}
+
 .cell-name {
   font-weight: 600;
   color: var(--text-h);
