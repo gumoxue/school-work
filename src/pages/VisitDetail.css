@@ -1,0 +1,86 @@
+.back-link {
+  display: inline-block;
+  margin-bottom: 18px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.detail-header h1 {
+  font-size: 26px;
+}
+
+.detail-badge {
+  background: var(--primary-soft);
+  color: var(--primary);
+  border: 1px solid #a5f3fc;
+  border-radius: 999px;
+  padding: 3px 12px;
+  font-size: 13px;
+}
+
+.info-card {
+  background: var(--surface);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 20px 24px;
+  margin-bottom: 18px;
+}
+
+.info-card h2 {
+  font-size: 16px;
+  color: var(--primary);
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 28px;
+  margin: 0;
+}
+
+.info-grid.single {
+  grid-template-columns: 1fr;
+}
+
+.info-grid dt {
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.info-grid dd {
+  margin: 0;
+  color: var(--text-h);
+}
+
+.diagnosis {
+  font-weight: 600;
+}
+
+.mono {
+  font-family: var(--mono);
+  font-size: 14px;
+}
+
+.not-found {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}

@@ -61,3 +61,27 @@
   font-size: 13px;
   white-space: nowrap;
 }
+
+.cell-name a {
+  color: var(--text-h);
+  text-decoration: none;
+}
+
+.cell-name a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.cell-action {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.detail-link {
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.detail-link:hover {
+  text-decoration: underline;
+}
