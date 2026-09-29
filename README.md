@@ -1,16 +1,37 @@
-# React + Vite
+# 就诊记录（医院信息系统 - 实验三）
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+基于 React + Vite + react-router-dom 的"就诊记录"页面，用于实验三《Vibe Coding 标准工作流与 Git 版本管理》。
 
-Currently, two official plugins are available:
+## 功能
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 就诊记录列表：展示患者姓名、科室、诊断、就诊时间
+- 点击记录进入详情页：患者信息、主诉、诊断、医嘱
+- 关键字搜索（姓名 / 诊断 / 医生 / 就诊号）+ 科室筛选
 
-## React Compiler
+## 运行
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```powershell
+npm install
+npm run dev      # 开发预览，默认 http://localhost:5173
+npm run build    # 生产构建
+```
 
-## Expanding the Oxlint configuration
+## 目录结构
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```
+src/
+  data/visits.js          本地 mock 就诊记录数据
+  pages/
+    VisitList.jsx         列表页（含关键字/科室筛选）
+    VisitDetail.jsx       详情页（路由 /visits/:id）
+  App.jsx                 路由配置
+  index.css               全局基础样式
+docs/
+  git-commands.md         Git 核心命令速查
+  实验三-过程记录.md        五步工作流 / 分支 / 回滚 过程记录
+  screenshots/            验证与回滚演练截图
+```
+
+## Git 提交规范
+
+采用约定式提交：`feat` / `fix` / `docs` / `style` / `refactor` / `chore`。
